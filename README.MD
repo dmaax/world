@@ -1,12 +1,10 @@
 ## Bukkit
 
-- **spawn-limits:**
-`monsters:50, animals:8, water-animals:7, water-ambient:10, ambient:1`
+- **spawn-limits:** `monsters:50, animals:8, water-animals:7, water-ambient:10, ambient:1`
 
 - **chunk-gc.period-in-ticks:** `400`
 
-- **ticks-per.(type)-spawns:**
-`monster:5, water:11, water-ambient:21, ambient:31`
+- **ticks-per.(type)-spawns:** `monster:5, water:11, water-ambient:21, ambient:31`
 
 - **autosave:** `6000`
 
@@ -14,128 +12,60 @@
 
 - **save-user-cache-on-stop-only:** `true`
 
-- **max-tick-time:**
-`tile:1000, entity:1000`
+- **max-tick-time:** `tile:1000, entity:1000`
 
-- **mob-spawn-range:** 6
-Def: 8
-Impact: N/A
+- **mob-spawn-range:** `6`
 
-- **entity-activation-range:**
-`animals:16, monsters:24, raiders: 48, misc:8`
-Impact: Medium
+- **entity-activation-range:** `animals:16, monsters:24, raiders: 48, misc:8`
 
-- **tick-inactive-villagers:** false
-Def: true
-Impact: Medium
+- **tick-inactive-villagers:** `false`
 
-- **merge-radius:**
-Def: item:2.5, exp:3.0
-Opt: item:4.0, exp:6.0
-Impact: Medium
+- **merge-radius:** `item:4.0, exp:6.0`
 
-- **nerf-spawner-mobs:** true
-Def: false
-Impact: Medium
+- **nerf-spawner-mobs:** `false`
 
-- **item-despawn-rate:** 3000
-Def: 6000 (5 minutes)
-Impact: Situational
+- **item-despawn-rate:** `3000`
 
-- **arrow-despawn-rate:** 300
-Def: 1200
-Impact: Minor
+- **arrow-despawn-rate:** `300`
 
 ## Paper
 
-- **max-auto-save-chunks-per-tick:** 6
-Default: 24
-Performance Impact: Heavy
+- **max-auto-save-chunks-per-tick:** `6`
 
-- **optimize-explosions:** true
-Default: false
-Impact: Minor
+- **optimize-explosions:** `true`
 
-mob-spawner-tick-rate
-Def: 1
-Opt: 2
-Impact: Minor
+- **mob-spawner-tick-rate:** `2`
 
-disable-chest-cat-detection
-Def: false
-Opt: true
-Impact: Minor
+- **disable-chest-cat-detection:** `true`
 
-container-update-tick-rate
-Def: 1
-Opt: 3
-Impact: Minor
+- **container-update-tick-rate:** `3`
 
-max-entity-collisions (in Spigot.yml in some builds)
-Def: 8
-Opt: 2
-Impact: Medium
+- **max-entity-collisions:** `2 (in Spigot.yml in some builds)`
 
-grass-spread-tick-rate
-Def: 1
-Opt: 4
-Impact: Medium
+- **grass-spread-tick-rate:** `4`
 
-despawn-ranges
-Def: soft: 32, hard: 128
-Opt: soft: 28, hard: 96
-Impact: Minor
+- **despawn-ranges:** `soft: 28, hard: 96`
 
-hopper.disable-move-event
-Def: false
-Opt: true
-Impact: Heavy
+- **hopper.disable-move-event:** `true`
 
-➫ This will significantly reduce hopper lag by preventing InventoryMoveItemEvent being called for EVERY slot in a container.
+*Warning: Plugins that listen for InventoryMoveItemEvent will break.*
 
-Warning: Plugins that listen for InventoryMoveItemEvent will break.
+- **non-player-arrow-despawn-rate:** `60`
 
-non-player-arrow-despawn-rate
-Def: -1 (uses Spigot arrow-despawn-rate)
-Opt: 60 (3 seconds)
-Impact: Minor
+- **creative-arrow-despawn-rate:** `60`
 
-creative-arrow-despawn-rate
-Def: -1 (Spigot arrow-despawn-rate)
-Opt: 60 (3 seconds)
-Impact: Minor
+- **prevent-moving-into-unloaded-chunks:** `true`
 
-prevent-moving-into-unloaded-chunks
-Def: false
-Opt: true
-Impact: Medium
+- **use-faster-eigencraft-redstone:** `true`
 
-use-faster-eigencraft-redstone
-Def: false
-Opt: true
-Impact: Heavy
+- **armor-stands-tick:** `false`
 
-armor-stands-tick
-Def: true
-Opt: false
-Impact: Minor
+- **per-player-mob-spawns:** `true`
 
-per-player-mob-spawns
-Def: false
-Opt: true
-Impact: Minor
+- **alt-item-despawn-rate:** `true`
 
-alt-item-despawn-rate
-Def: false
-Opt: true
-Impact: Medium
+- **no-tick-view-distance:** `6`
 
-no-tick-view-distance
-Def: -1
-Opt: # > view-distance setting
-Impact: N/A
+*Obs.: # > view-distance setting*
 
-anti-xray.enabled
-Def: false
-Opt: true
-Impact: N/A
+- **anti-xray.enabled:** `true`
